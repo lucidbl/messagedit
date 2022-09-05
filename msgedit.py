@@ -7,6 +7,7 @@ token = input("Token: ")
 message1 = "volim"
 message2 = "vanya"
 message3 = ":hearts:"
+#add more variables for more edits
 tokenz = {"authorization":f"{token}"}
 
 while True:
@@ -16,4 +17,5 @@ while True:
     time.sleep(1)
     edit3 = requests.patch(f"https://discord.com/api/v9/channels/{channel_id}/messages/{message_id}", headers = tokenz, json={"content":f"{message3}"})
     time.sleep(1)
+    #add more edits if u add more messages
     
